@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "esbuild": "^0.17.7",
+    "https-proxy-agent": "^5.0.1",
+    "node-fetch": "^3.3.0",
+    "typescript": "^4.9.5"
+  },
+  "scripts": {
+    "start": "http_proxy=http://127.0.01:9090 esbuild node-fetch-test.ts --bundle --platform=node | node -"
+  }
+}
